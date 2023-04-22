@@ -1,3 +1,4 @@
+// array of objects called 'posts'
 const posts = [
     {
         name: "Vincent van Gogh",
@@ -17,7 +18,7 @@ const posts = [
         comment: "i'm feelin a bit stressed tbh",
         likes: 10987
     },
-        {
+    {
         name: "Joseph Ducreux",
         username: "jd1735",
         location: "Paris, France",
@@ -28,9 +29,16 @@ const posts = [
     }
 ]
 
+// selects the HTML element with class 'feed' and assign it to a variable called 'feed'
 const feed = document.querySelector(".feed")
+
+// selects the HTML element with class 'user-post' and assign it to a variable called 'userPost'
 const userPost = document.querySelector(".user-post")
+
+// create an empty string called 'listPost' to add posts later
 let listPost = ""
+
+// loops through each object in the 'posts' array and concatenate the relevant HTML code to the 'listPost' string
 for(let i=0; i<posts.length; i++){
     listPost += `
     <div class="user-info">
@@ -48,4 +56,6 @@ for(let i=0; i<posts.length; i++){
         <p><span class="user-id">${posts[i].username}</span> <span class="user-comment">${posts[i].comment}</span></p>
     `
 }
+
+// sets the inner HTML of the 'feed' element to the 'listPost' string
 feed.innerHTML = listPost
