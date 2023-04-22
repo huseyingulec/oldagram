@@ -29,16 +29,16 @@ const posts = [
     }
 ]
 
-// selects the HTML element with class 'feed' and assign it to a variable called 'feed'
+// selects the HTML element with class 'feed' and assigns it to a variable called 'feed'
 const feed = document.querySelector(".feed")
 
-// selects the HTML element with class 'user-post' and assign it to a variable called 'userPost'
+// selects the HTML element with class 'user-post' and assigns it to a variable called 'userPost'
 const userPost = document.querySelector(".user-post")
 
 // create an empty string called 'listPost' to add posts later
 let listPost = ""
 
-// loops through each object in the 'posts' array and concatenate the relevant HTML code to the 'listPost' string
+// loops through each object in the 'posts' array and concatenates the relevant HTML code to the 'listPost' string
 for(let i=0; i<posts.length; i++){
     listPost += `
     <div class="user-info">
