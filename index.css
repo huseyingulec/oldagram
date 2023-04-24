@@ -1,18 +1,16 @@
 body {
-    padding: 0px;
     font-family: 'Inter', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
 .container {
-    width: 400px;
-    margin: 0 auto;
     padding: 10px;
 }
 
 .logo {
-    width: 150px;
+    min-width: 25vw;
+    max-width: 50vw;
     height: 55px;
 }
 
@@ -24,9 +22,7 @@ header {
     background-color: white;
 }
 
-header .user-avatar, body {
-    margin: 0px;
-}
+
 
 .user-avatar {
     width: 45px;
@@ -51,24 +47,24 @@ header .user-avatar, body {
 }
 .user-name {
     margin: 10px 0 0 10px;
-    padding-bottom: 0px;
 }
 
 .user-location {
     margin: 2px 0 0 10px;
-    padding: 0px;
-    font-size: 15px;
 }
 
 .icon-heart, .icon-comment, .icon-dm {
     width: 35px;
     height: 35px;
     margin: 10px 5px;
+    transition: 1s;
+    cursor: pointer;
 }
 .icon-heart:hover, 
 .icon-comment:hover, 
 .icon-dm:hover {
     opacity: 0.5;
+    border-bottom:  10px solid red;
 }
 
 .post-likes {
@@ -80,6 +76,3 @@ header .user-avatar, body {
     font-size: 15px;
 }
 
-.user-comment {
-    font-size: 15px;
-}
